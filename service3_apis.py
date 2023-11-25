@@ -33,11 +33,7 @@ def api_get_good_details():
     return jsonify(get_good_details())
 
 @app.route('/api/goods/sell', methods=['DELETE'])
-def api_delete_good():
-    return jsonify(delete_good())
-
-@app.route('/api/goods/update', methods=['PUT'])
-def api_update_good():
-    return jsonify(update_good())
+def api_sell_good():
+    return jsonify(sell_good())
 
 
